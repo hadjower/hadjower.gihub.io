@@ -4,9 +4,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 a {
 	text-decoration: none;
 }
+
 #header {
 	display: flex;
 	justify-content: space-between;
@@ -14,17 +16,20 @@ a {
 	top: 0;
 	background-color: white;
 	border-bottom: 1px solid #D4DAE3 ;
-	width: 100vw;
+	width: 100%;
 	z-index: 2;
 }
+
 .header__menu {
 	list-style-type: none;
 	padding: 0;
-	margin:0;
+	margin: 0;
 }
+
 .header__menu li {
 	display: inline-block;
 }
+
 .header__menu a {
 	display: inline-block;
 	color: black;
@@ -32,43 +37,51 @@ a {
 	font-size: 120%;
 	padding: 30px 20px;
 }
+
 .header__menu li:hover {
 	background-color: #F9F9F9;
 	font-weight: bold;
 }
+
 .header__logo {
 	padding: 5px 5px 5px 20px;
 	width: 18%;
 }
+
 .header__logo a {
 	text-decoration: none;
 	font-family: 'Monoton', cursive;
 	font-size: 200%;
 	color: #025E9F;
 }
+
 .header__slogan {
 	display: block;
 	font-family: 'Nothing You Could Do', cursive;
 }
+
 main {
 	padding-top: 80px;
 }
+
 .promo {
-	/*background-color: #F6CD3A;*/
-	background-image: url('https://www.converse.com/on/demandware.static/-/Library-Sites-SharedLibrary/default/dw8a0656f5/firstspirit/media/homepage_1/2019_summer_1/04_12/dt_79/D-Homepage-4-11-P1-PalmTreePlate-image-1-SU19.jpg');
+	background-image: url('img/palms.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 400px;
 	padding: 40px 30px;
 	color: white;
 }
+
 .promo h1 {
 	display: inline-block;
 	margin: 0 0 20px 0;
 	text-transform: uppercase;
 	font-family: 'Notable', cursive;
 	width: 50%;
+	font-size: 200%;
 }
+
 .promo__img {
 	float: right;
 	position: relative;
@@ -76,61 +89,194 @@ main {
 	width: 30%;
 	z-index: 1;
 }
+
 .promo__decription {
 	font-family: 'Muli', sans-serif;
 	width: 55%;
 }
+
 .promo__decription:after {
 	position: absolute;
 	top: 80px;
 	right: 0;
-	float: right;
-	display: block;
 	content: "";
 	width: 40%;
 	height: 480px;
 	background-color: white;
 }
+
 .promo__price {
 	font-size: 200%;
 	font-weight: bold;
-	padding: 10px;
-	font-family: 'Muli', sans-serif;
+	margin-left: 10px;
+	font-family: 'Nothing You Could Do', sans-serif;
 }
 
 .promo__button {
+	display: inline-block;
+	width: 110px;
+	margin: 20px 10px;
+	padding: 10px;
+	border: 1px solid white;
+	color: white;
+	font-family: 'Gruppo', sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.promo__button:hover { 
+	background-color: rgba(199,203,209,0.5) ;
+}
+
+.gallery {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.gallery a img {
+	box-sizing: border-box;
+	width: 33.3%;
+	float: left;
+  	padding: 10px;
+}
+
+.gallery::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.gallery a img:hover {
+ -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.gallery h2 {
+	font-family: 'Notable', cursive;
+	margin: 30px;
+	font-size: 200%;
+}
+
+#order {
+	font-family: 'Notable', cursive;
+	font-size: 200%;
+	color: white;
+}
+
+.order {
+	background-color: black;
+	color: white;
+	padding: 30px;
+	font-family: 'Muli', sans-serif;
+	background-image: url('img/keds.jpg');
+	background-repeat: no-repeat;
+	background-position: 90% 10%;
+	background-size: 300px auto; 
+}
+
+.order div {
+	margin: 25px;
+}
+
+.order__price {
+	font-size: 200%;
+	font-weight: bold;
+	margin-left: 10px;
+	font-family: 'Nothing You Could Do', sans-serif;
+}
+
+.order__size select,
+.order__name input,
+.order__phone input {
+	position: absolute;
+	left: 160px;
+	width: 30vw;
+	height: 20px;
+}
+
+.order__button {
 	display: inline-block;
 	width: 110px;
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid white;
 	color: white;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Gruppo', sans-serif;
 	font-size: 120%;
 	font-weight: bold;
+	background-color: transparent;
+	margin-left: 20px;
 }
 
-@media (min-width: 850px) and (max-width: 1000px) {
+.order__button:hover {
+	cursor: pointer;
+	background-color: rgba(199,203,209,0.5) ;
+}
+
+.order__sizes {
+	font-family: 'Muli', sans-serif;
+	font-size: 115%;
+	border-collapse: collapse;
+	background-color: rgba(226,230,237,0.3);
+	width: 100%;
+}
+
+.order__sizes td {
+	text-align: center;
+}
+
+.order__sizes th {
+	background-color: rgb(96,98,101);
+}
+
+.order__sizes tfoot td {
+	padding-top: 20px;
+	background-color: black;
+}
+
+.order__sizes caption {
+	padding: 20px 0;
+}
+
+
+@media (max-width: 1000px) {
+
 .promo {
 	height: 350px;
 }
+
 .promo__decription:after {
 	height: 430px;
 }
+
 .promo__decription {
 	font-size: 80%;
 }
-.promo h1,
-.promo__price {
+
+.promo h1 {
 	font-size: 150%;
 }
+
 .promo__button {
-	font-size: 80%;
-	width: 80px;
+	font-size: 100%;
+	width: 90px;
 }
+#gallery {
+	font-size: 150%;
+}
+#order {
+	font-size: 150%;
+}
+.order {
+	font-size: 80%;
+}
+.order__sizes {
+	font-size: 100%;
 }
 
-@media (min-width: 700px) and (max-width: 850px) {
+@media (max-width: 850px) {
+
 main {
 	padding-top: 60px;
 }
@@ -138,19 +284,23 @@ main {
 .header__logo {
 	width: 30%;
 }
+
 .header__logo a {
 	font-size: 150%;
 }
+
 .header__slogan {
 	font-size: 80%;
 }
+
  .header__menu li {
 	display: none;
 }
+
 nav:after {
 	display: block;
 	content: "";
-	background-image: url("menu.png");
+	background-image: url('img/menu.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30px 30px;
@@ -158,103 +308,52 @@ nav:after {
 	height: 100%;
 	margin-right: 10px;
 }
+
 nav:hover li {
 	display: block;
 }
+
 nav:hover a {
-	padding: 10px 15px;
+	padding: 15px;
+	width: 100%;
 }
+
 nav:hover ul {
 	position: absolute;
 	top: 65px;
-	margin: 0;
 	right: 0;
 	background-color: white;
 	width: 100%;
 }
+
 nav:hover {
 	cursor: pointer;
 }
-.promo {
-	height: 350px;
-}
+
 .promo__decription:after {
 	top: 60px;
-	height: 430px;
 }
-.promo__decription {
-	font-size: 80%;
-}
-.promo h1,
-.promo__price {
-	font-size: 150%;
-}
-.promo__button {
-	font-size: 80%;
-	width: 80px;
+
+.order {
+	background-size: 200px auto; 
 }
 }
 
 @media (max-width: 700px) {
-main {
-	padding-top: 60px;
-}
-.header__logo {
-	width: 30%;
-}
-.header__logo a {
-	font-size: 150%;
-}
-.header__slogan {
-	font-size: 80%;
-}
- .header__menu li {
-	display: none;
-}
-nav:after {
-	display: block;
-	content: "";
-	background-image: url("menu.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 30px 30px;
-	width: 50px;
-	height: 100%;
-	margin-right: 10px;
-}
-nav:hover li {
-	display: block;
-}
-nav:hover a {
-	padding: 10px 15px;
-}
-nav:hover ul {
-	position: absolute;
-	top: 65px;
-	margin: 0;
-	right: 0;
-	background-color: white;
-	width: 100%;
-}
-nav:hover {
-	cursor: pointer;
-}
+
 .promo {
 	height: 100%;
 	background-size: cover;
 	background-position: right;
 }
-.promo h1 {
 
-}
 .promo__img {
-	position: relative;
 	display: block;
 	float: none;
 	margin: 30px 0;
-	padding: 0;
-	width: 70%;
+	width: 250px;
 }
+
 .promo__decription:after {
 	display: none;
 }
@@ -263,14 +362,51 @@ nav:hover {
 .promo__price {
 	display: block;
 	width: 100%;
-	font-size: 150%;
 }
+
 .promo__decription {
 	width: 100%;
-	font-size: 80%;
 }
-.promo__button {
-	font-size: 80%;
-	width: 80px;
+.gallery {
+	display: flex;
+	flex-direction: column;
+}
+.gallery a img {
+	display: block;
+	width: 60%;
+	min-width: 300px;
+	margin: 0 auto;
+	float: none;
+  	padding: 20px;
+}
+
+#gallery {
+	text-align: center;
+}
+
+.order {
+	background-image: none; 
+}
+
+#order {
+	text-align: center;
+}
+
+.order__size select,
+.order__name input,
+.order__phone input {
+	position: absolute;
+	left: 140px;
+	width: 50%;
+	height: 20px;
+}
+
+.order__button {
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.order__price {
+	text-align: center
 }
 }
