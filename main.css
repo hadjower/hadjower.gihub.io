@@ -14,7 +14,7 @@ a {
 	top: 0;
 	background-color: white;
 	border-bottom: 1px solid #D4DAE3 ;
-	width: 100%;
+	width: 100vw;
 	z-index: 2;
 }
 .header__menu {
