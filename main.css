@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton|Nothing+You+Could+Do|Gruppo|Notable|Muli');
+@import url('https://fonts.googleapis.com/css?family=Monoton|Nothing+You+Could+Do|Gruppo|Notable|Muli|Handlee');
 
 body {
 	margin: 0;
@@ -15,7 +15,7 @@ a {
 	position: fixed;
 	top: 0;
 	background-color: white;
-	border-bottom: 1px solid #D4DAE3 ;
+	border-bottom: 1px solid black;
 	width: 100%;
 	z-index: 2;
 }
@@ -85,7 +85,7 @@ main {
 .promo__img {
 	float: right;
 	position: relative;
-	margin-top: 15vh;
+	margin-top: 8vh;
 	width: 30%;
 	z-index: 1;
 }
@@ -131,6 +131,7 @@ main {
 .gallery {
 	width: 100%;
 	margin-bottom: 20px;
+	border-top: 1px solid;
 }
 
 .gallery a img {
@@ -162,6 +163,7 @@ main {
 	font-family: 'Notable', cursive;
 	font-size: 200%;
 	color: white;
+	margin-left: 20px;
 }
 
 .order {
@@ -224,10 +226,17 @@ main {
 
 .order__sizes td {
 	text-align: center;
+	padding: 5px;
+}
+
+.order__sizes tbody tr:hover {
+	font-size: 1.4em;
+	color: #54ADD0;
 }
 
 .order__sizes th {
-	background-color: rgb(96,98,101);
+	background-color: #606265;
+	padding: 5px;
 }
 
 .order__sizes tfoot td {
@@ -237,6 +246,106 @@ main {
 
 .order__sizes caption {
 	padding: 20px 0;
+}
+
+.payment-and-delivery {
+	background-color: #4D9EBE;
+	background-image: url('img/white.jpg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 300px; 
+	height: 300px;
+} 
+
+.payment-and-delivery ol,
+.payment-and-delivery h2 {
+	margin-left: 350px;
+	color: white;
+	padding: 10px 30px;
+}
+
+.payment-and-delivery h2 {
+	margin-top: 0;
+	padding-top: 40px;
+	font-family: 'Notable', cursive;
+	font-size: 200%;
+}
+
+.payment-and-delivery ol {
+	padding-top: 20px;
+	font-family: 'Muli', sans-serif;
+}
+
+.reviews h4 {
+	font-family: 'Handlee', cursive;
+}
+
+.reviews p {
+	font-family: 'Handlee', cursive;
+}
+
+#reviews {
+	font-family: 'Notable', cursive;
+	font-size: 200%;
+	margin-left: 20px;
+}
+
+.reviews ul {
+	list-style-image: url('img/icons.png');
+	margin: 20px;
+}
+
+.footer {
+	display: flex;
+	background-color: black;
+	color: white;
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+
+.footer ul {
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
+}
+.footer a {
+	color: #A8DBF0;
+}
+
+.footer li {
+	padding: 3px;
+	color: #A8DBF0;
+	font-family: 'Muli', sans-serif;
+}
+
+.footer h3 {
+	font-family: 'Notable', cursive;
+
+}
+
+.footer__copyright {
+	align-self: center;
+	font-family: 'Gruppo', sans-serif;
+	font-size: 150%;
+}
+
+.footer__social a {
+	display: block;
+	height: 35px;
+	padding: 5px 0 0 45px;
+}
+
+.footer__social li:nth-child(1) {
+	background-image: url('img/facebook.png');
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+
+.footer__social li:nth-child(2) {
+	background-image: url('img/instagram.png');
+	background-size: 35px;
+	background-repeat: no-repeat;
 }
 
 
@@ -265,14 +374,51 @@ main {
 #gallery {
 	font-size: 150%;
 }
-#order {
-	font-size: 150%;
-}
 .order {
 	font-size: 80%;
 }
 .order__sizes {
 	font-size: 100%;
+}
+.payment-and-delivery h2 {
+	font-size: 120%;
+}
+.payment-and-delivery ol {
+	font-size: 80%;
+}
+.payment-and-delivery {
+	background-size: auto 200px; 
+	height: 200px;
+} 
+
+.payment-and-delivery h2,
+.payment-and-delivery ol  {
+	 margin-left: 220px;
+}
+
+#reviews {
+	font-size: 150%;
+}
+
+.reviews h4 {
+	font-size: 80%;
+}
+
+.reviews p {
+	font-size: 80%;
+}
+
+.footer h3 {
+	font-size: 80%; 
+}
+
+.footer__copyright {
+	font-size: 100%;
+}
+
+.footer li {
+	font-size: 70%;
+}
 }
 
 @media (max-width: 850px) {
@@ -350,7 +496,7 @@ nav:hover {
 .promo__img {
 	display: block;
 	float: none;
-	margin: 30px 0;
+	margin: 50px auto;
 	width: 250px;
 }
 
@@ -358,14 +504,21 @@ nav:hover {
 	display: none;
 }
 
+.promo__button {
+	display: block;
+	margin: 20px auto;
+}
+
 .promo h1,
 .promo__price {
 	display: block;
 	width: 100%;
+	text-align: center;
 }
 
 .promo__decription {
 	width: 100%;
+	margin-bottom: 30px;
 }
 .gallery {
 	display: flex;
@@ -408,5 +561,35 @@ nav:hover {
 
 .order__price {
 	text-align: center
+}
+
+#reviews {
+	text-align: center
+}
+}
+
+@media (max-width: 600px) {
+
+.payment-and-delivery {
+	background-image: none;
+} 
+
+.payment-and-delivery ol,
+.payment-and-delivery h2 {
+	margin-left: 10px;
+}
+
+.payment-and-delivery h2 {
+	text-align: center;
+}
+
+.footer {
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer li {
+	background-position: 42%;
+	padding-top: 10px;
 }
 }
